@@ -5,17 +5,6 @@
 # Apart from packages from the official Arch repos, you can also specify
 # packages from the Chaotic-AUR repo
 PACKAGES=(
-	# audio
-	alsa-lib lib32-alsa-lib alsa-plugins lib32-alsa-plugins libpulse
-	lib32-libpulse alsa-tools alsa-utils pipewire lib32-pipewire pipewire-pulse pipewire-jack lib32-pipewire-jack
-	# core
-	xorg-xwayland qt6-wayland wayland lib32-wayland qt5-wayland xorg-server-xephyr gamescope
-	# video
-	mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon
-	vulkan-intel lib32-vulkan-intel
-	vulkan-icd-loader lib32-vulkan-icd-loader vulkan-mesa-layers
-	lib32-vulkan-mesa-layers libva-intel-driver lib32-libva-intel-driver
-	intel-media-driver mesa-utils vulkan-tools libva-utils lib32-mesa-utils
 	# wine
 	wine-staging winetricks-git wine-nine wineasio
 	freetype2 lib32-freetype2 libxft lib32-libxft
@@ -38,25 +27,10 @@ PACKAGES=(
 	sdl2-compat lib32-sdl2-compat vkd3d lib32-vkd3d libgphoto2
 	openssl-1.1 lib32-openssl-1.1 libnm lib32-libnm
 	cabextract wget gamemode lib32-gamemode mangohud lib32-mangohud
-	# development
-	base-devel git meson mingw-w64-gcc cmake
-	# gaming
-	lutris python-protobuf steam steamtinkerlaunch
-	minigalaxy gamehub legendary prismlauncher bottles playonlinux obs-studio
-	retroarch retroarch-assets-ozone libretro-beetle-psx-hw
-	libretro-blastem libretro-bsnes libretro-dolphin duckstation-gpl
-	libretro-gambatte libretro-melonds libretro-mgba libretro-nestopia
-	libretro-parallel-n64 libretro-picodrive libretro-ppsspp
-	libretro-yabause pcsx2-git lsfg-vk-git
-	# extra
-	nano ttf-dejavu ttf-liberation firefox mpv geany pcmanfm
-	htop qbittorrent speedcrunch gpicview file-roller openbox lxterminal
-	yt-dlp minizip nautilus genymotion jre17-openjdk gnome-themes-extra
- 	ffmpegthumbnailer tmux
 )
 
 # If you want to install AUR packages, specify them in this variable
-AUR_PACKAGES=(faugus-launcher-git)
+AUR_PACKAGES=()
 
 # ALHP is a repository containing packages from the official Arch Linux
 # repos recompiled with -O3, LTO and optimizations for modern CPUs for
